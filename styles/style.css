@@ -14,75 +14,71 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font-family), sans-serif;
-  font-variation-settings: "wgth" var(--main-font-weight);
-  color: var(--main-color);
-  font-size: 18px;
-  background-image: var(--background-image);
+  font-family: var(--inter);
+  font-variation-settings: "wgth" var(--basic-font-weight);
+  color: var(--basic-color);
+  font-size: var(--main-font-size);
+  background-image: var(--background);
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
 }
 
-/*Хедер*/
-
 .header {
-  max-inline-size: 700px;
+  font-family: var(--pressstart2p);
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-bottom: 28px;
-  justify-content: center;
+  max-width: 700px;
+  padding-bottom: 25px;
   margin: 102px auto;
-  border: 2px solid var(--main-color);
+  border: var(--border);
   background-color: var(--background-color);
-  font-family: var(--title-font-family, sans-serif);
 }
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  color: inherit;
-  margin-top: 136px;
+  margin-top: clamp(120px, 10vw, 136px);
 }
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  text-transform: uppercase;
   margin: 20px 0 20px;
+  text-transform: uppercase;
 }
 
 .theme-menu__list {
   align-items: start;
   display: flex;
+  padding-inline-start: var(--main-font-size);
+  gap: 9px;
   flex-direction: column;
-  padding-inline-start: 18px;
-  gap: 8px;
 }
 
 .theme-menu__button {
   padding: 0;
   font-size: 14px;
   cursor: pointer;
+  transition: opacity 0.3s ease;
   background-color: transparent;
-  position: relative;
   border: none;
   text-transform: uppercase;
-  transition: opacity 0.3s ease;
+  position: relative;
 }
 
 .theme-menu__button:disabled {
   pointer-events: none;
 }
+.theme-menu__button:hover,
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
 
 .theme-menu__button:disabled::before {
   position: absolute;
   content: "▶";
-  opacity: 0.6;
-}
-
-.theme-menu__button:hover,
-.theme-menu__button:disabled {
+  display: var(--disabled-dispaly);
   opacity: 0.6;
 }
 
@@ -95,23 +91,277 @@
   outline: none;
 }
 
-.theme-menu__button:focus-visible::after {
-  width: 100%;
-}
-
 .theme-menu__button:after {
   position: absolute;
   content: "";
   display: block;
   width: 0%;
   height: 2px;
-  background-color: var(--main-color);
+  background-color: var(--basic-color);
   transition: width 0.3s ease;
 }
 
-/*Контент*/
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+}
 
-.main {
+.card {
+  width: clamp(375px, 100%, 700px);
+  margin: 52px auto;
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.card-title {
+  font-family: var(--inter);
+  font-size: var(--main-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: 21px;
+  padding: 4px 7px 6px 11px;
+}
+
+.card-img-container {
+  position: relative;
+  border-top: var(--border);
+  border-bottom: var(--border);
+  overflow: hidden;
+}
+
+.img-label {
+  position: absolute;
+}
+
+.text-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-inline-end: 1px;
+  gap: 27px;
+  line-height: 21px;
+}
+
+.card__buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 24px 19px 0px;
+  align-items: start;
+}
+
+.card__icon-button {
+  border: 0;
+  transition: border 0.3s ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+  width: 41px;
+  height: 37px;
+  margin-right: 6px;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.card__icon-button:focus {
+  outline: 0;
+}
+
+.card__icon-button:focus-visible {
+  border: var(--border);
+}
+
+.card__like-button {
+  position: relative;
+  padding: 6px 17px;
+  inline-size: 130px;
+  border: var(--border);
+  margin-bottom: 6px;
+  background-color: transparent;
+}
+
+.button__text {
+  font-family: var(--pressstart2p);
+  font-size: 14px;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+
+.image-bluish {
+  filter: hue-rotate(-30deg);
+}
+
+.image-blurry {
+  filter: blur(3.2rem);
+}
+
+.image-Colorization {
+  filter: grayscale(0.8);
+}
+
+.image-foggy {
+  filter: opacity(0.8);
+}
+
+.image-negative {
+  filter: invert(0.7);
+}
+
+.image-saturated {
+  filter: saturate(158%);
+}
+
+.image-sepia {
+  filter: sepia(80%);
+}
+
+.card-image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.card__like-button:focus {
+  outline: 0;
+}
+
+.card__like-button:focus-visible {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 2px 2px 0px 0px var(--basic-color);
+}
+
+.button-save {
+  position: relative;
+  margin: 0 auto 100px;
+  display: flex;
+  padding: 15px;
+  gap: 8px;
+  width: clamp(306px, 83vw, 340px);
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+  background-color: var(--background-color);
+}
+.button-save-icon {
+  width: 21px;
+  height: 21px;
+  mix-blend-mode: difference;
+  color: var(--button-text-color);
+}
+.icon-animation:hover .button-save-icon {
+  mix-blend-mode: difference;
+}
+
+dialog::backdrop {
+  opacity: 0.75;
+  background: #000;
+}
+
+.dialog-btn {
+  position: relative;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: var(--border);
+  padding: 6px 0px;
+  width: min(293px, 68vw);
+}
+.content-wrapper {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pop-up-window {
+  margin: auto;
+  width: clamp(341px, 90vw, 357px);
+  padding: 30px;
+  color: var(--basic-color);
+  background-color: var(--background-color);
+}
+.pop-up-window-text {
+  font-family: var(--pressstart2p);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.dialog-icon {
+  width: 81px;
+}
+
+.container {
+  display: flex;
+  gap: 17px;
+  line-height: 21px;
+}
+
+.icon-animation::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  background-color: var(--basic-color);
+  top: 0;
+  left: 0;
+}
+
+.icon-animation:hover::before {
+  transform: scaleX(1);
+}
+
+.icon-animation:hover .button__text {
+  mix-blend-mode: difference;
+}
+@supports ((-webkit-text-stroke: 1px var(--img-label-border-color))) {
+  .img-label {
+    -webkit-text-stroke: 1px var(--img-label-border-color);
+  }
+}
+
+.img-label {
+  position: absolute;
+  font-family: var(--pressstart2p);
+  font-weight: var(--basic-font-weight);
+  color: var(--basic-color);
+  top: 25px;
+  right: 25px;
+  font-size: 14px;
+  mix-blend-mode: hard-light;
+  z-index: 1;
+  text-shadow: -1px -1px 0 var(--img-label-border-color),
+    1px -1px 0 var(--img-label-border-color),
+    -1px 1px 0 var(--img-label-border-color),
+    1px 1px 0 var(--img-label-border-color);
+  opacity: 0.5;
+}
+
+.like-icon {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transform-origin: center;
+}
+
+@media (width <= 376px) {
+  .button-save {
+    flex-direction: column;
+  }
+  .button-save-icon {
+    width: 27px;
+    height: auto;
+  }
+  .img-label {
+    top: 21px;
+    right: 12px;
+  }
+  .dialog-icon {
+    width: 94px;
+  }
+  .container {
+    margin-left: 10px;
+  }
+}
+
+/* .main {
   margin-inline: auto;
 }
 
@@ -188,7 +438,7 @@
 
 /*LIKE and button*/
 
-.button__text {
+/* .button__text {
   position: relative;
   font-size: 14px;
   line-height: 90%;
@@ -210,15 +460,9 @@
   display: flex;
   align-items: center;
   margin: 0 25px 25px 0;
-  /*margin-top: 15px;*/
+  margin-top: 15px;
 }
 
-.like-icon {
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  transform-origin: center;
-}
 
 .card__icon-button {
   cursor: pointer;
@@ -284,8 +528,6 @@
   transform: scaleX(1);
 }
 
-/*Футер*/
-
 .save__button {
   align-items: center;
   display: flex;
@@ -309,11 +551,11 @@
   mix-blend-mode: difference;
   flex-shrink: 0;
   color: var(--text-color);
-}
+} */
 
 /*Модальное окно после клика*/
 
-.modal-window {
+/* .modal-window {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -400,7 +642,7 @@ dialog::backdrop {
   filter: brightness(10%);
 }
 
-@media (width <= 376px) {
+
   .header__title {
     margin-top: 120px;
   }
@@ -427,4 +669,4 @@ dialog::backdrop {
   .button__text {
     margin-bottom: 8px;
   }
-}
+} */
