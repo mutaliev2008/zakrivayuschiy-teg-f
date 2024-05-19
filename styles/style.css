@@ -127,10 +127,6 @@
   overflow: hidden;
 }
 
-.img-label {
-  position: absolute;
-}
-
 .text-container {
   padding: 25px;
   display: flex;
@@ -324,6 +320,7 @@ dialog::backdrop {
 
 .img-label {
   font-family: var(--pressstart2p);
+  position: absolute;
   font-weight: var(--basic-font-weight);
   color: var(--basic-color);
   top: 25px;
