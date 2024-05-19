@@ -18,6 +18,7 @@
   --img-label-border-color: #000;
   --title-font-weight: 800;
   --button-text-color: #00cc14;
+  --title-font-weight: 785;
   --disabled-dispaly: none;
 }
 
@@ -32,10 +33,11 @@
       linear-gradient(to bottom, #007f0c, #004306);
     --background-color: #000;
     --basic-color: rgb(0, 204, 20);
+    --img-label-border-color: #000;
     --title-font-weight: 800;
     --button-text-color: #00cc14;
+    --title-font-weight: 785;
     --disabled-dispaly: none;
-    --img-label-border-color: #000;
   }
 }
 :root.theme-light {
@@ -57,32 +59,3 @@
   --disabled-dispaly: block;
   --img-label-border-color: #fff;
 }
-/*
-  --title-font-weight: 785;
-  --main-font-weight: 465;
-  --background-color: #000;
-  --line-color: #000;
-  --main-color: #00cc14;
-  --text-color: #00cc14;
-  --photo-text-color: #000;
-  --border-bottom: #00cc14;
-
-
-
-:root.theme-light {
-  --background-image: repeating-linear-gradient(
-      to left,
-      #d3d3d3 0 2px,
-      #d3d3d300 2px 4px
-    ),
-    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --title-font-weight: 700;
-  --main-font-weight: 400;
-  --background-color: #fff;
-  --line-color: #fff;
-  --main-color: #000;
-  --text-color: #fff;
-  --photo-text-color: #fff;
-  --border-bottom: #000;
-} */

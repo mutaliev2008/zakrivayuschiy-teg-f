@@ -18,22 +18,10 @@
   --basic-color: #000;
   --border: 2px solid var(--basic-color);
   --main-font-size: 18px;
-  --basic-font-weight: 400;
+  --basic-font-weight: 465;
   --title-font-weight: 700;
   --img-label-border-color: #fff;
   --disabled-dispaly: block;
   --button-text-color: #fff;
   --heart-color: #ff0000;
 }
-/* 
-  
-  --photo-text-color: #fff;
-  --line-color: #fff;
-  --title-font-weight: 700;
-  --main-font-weight: 400;
-  --color-push-heart: #ff0000;
-  --color-heart: #000;
-  --none-heart: rgba(256, 0, 0, 0);
-  --border-bottom: #000;
-  --main-font-size: 18px;
-  --text-color: #fff;*/

@@ -44,11 +44,6 @@
 }
 
 .core {
-  animation: opacity 0.3s 0.3s ease-in alternate;
-  fill: var(--heart-color);
-}
-
-.core {
   fill: transparent;
   transition: fill 0.3s 0.03s linear;
 }
