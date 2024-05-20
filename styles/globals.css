@@ -34,6 +34,7 @@ button,
 input {
   color: currentColor;
   font-family: inherit;
+  cursor: pointer;
   font-size: inherit;
 }
 

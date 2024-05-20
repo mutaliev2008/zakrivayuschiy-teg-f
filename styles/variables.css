@@ -12,8 +12,9 @@
       rgba(0, 0, 0, 0) 2px 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --inter: "Inter-Variable", sans-serif;
-  --pressstart2p: "PressStart2P", sans-serif;
+  --bg-color: #fff;
+  --main-font-family: "Inter-Variable", sans-serif;
+  --title-font-family: "PressStart2P", fantasy;
   --background-color: #fff;
   --basic-color: #000;
   --border: 2px solid var(--basic-color);
@@ -21,7 +22,6 @@
   --basic-font-weight: 465;
   --title-font-weight: 700;
   --img-label-border-color: #fff;
-  --disabled-dispaly: block;
   --button-text-color: #fff;
   --heart-color: #ff0000;
 }
