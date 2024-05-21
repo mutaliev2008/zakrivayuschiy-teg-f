@@ -319,13 +319,6 @@ dialog::backdrop {
   transform: scaleX(1);
 }
 
-@supports ((-webkit-text-stroke: 1px var(--img-label-border-color))) {
-  .img-label {
-    -webkit-text-stroke: 1px var(--img-label-border-color);
-    text-shadow: none;
-  }
-}
-
 .img-label {
   font-family: var(--title-font-family);
   position: absolute;
@@ -341,6 +334,13 @@ dialog::backdrop {
     -1px 1px 0 var(--img-label-border-color),
     1px 1px 0 var(--img-label-border-color);
   opacity: 0.5;
+}
+
+@supports ((-webkit-text-stroke: 1px var(--img-label-border-color))) {
+  .img-label {
+    -webkit-text-stroke: 1px var(--img-label-border-color);
+    text-shadow: none;
+  }
 }
 
 .like-icon {
