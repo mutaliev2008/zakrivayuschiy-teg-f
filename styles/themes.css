@@ -17,8 +17,8 @@
   --background-color: #000;
   --basic-color: rgb(0, 204, 20);
   --img-label-border-color: #000;
-  --title-font-weight: 800;
   --button-text-color: #00cc14;
+  --basic-font-weight: 465;
   --title-font-weight: 785;
 }
 
@@ -35,8 +35,8 @@
     --basic-color: rgb(0, 204, 20);
     --img-label-border-color: #000;
     --bg-color: #000;
-    --title-font-weight: 800;
     --button-text-color: #00cc14;
+    --basic-font-weight: 465;
     --title-font-weight: 785;
   }
 }
@@ -55,6 +55,7 @@
   --background-color: #fff;
   --bg-color: #fff;
   --basic-color: #000;
+  --basic-font-weight: 400;
   --title-font-weight: 700;
   --button-text-color: #fff;
   --img-label-border-color: #fff;

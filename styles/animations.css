@@ -50,7 +50,6 @@
 
 .like-icon .sparks {
   opacity: 0;
-  animation: opacity 0.3s 0.3s ease-in alternate;
   fill: var(--heart-color);
 }
 
