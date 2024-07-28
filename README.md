@@ -1,7 +1,5 @@
-Проектная работа "Закрывающий тег"
-[Посетить сайт](https://mutaliev2008.github.io/zakrivayuschiy-teg-f/)
-https://github.com/mutaliev2008/zakrivayuschiy-teg-f.git
-
+Проектная работа "Закрывающий тег"  
+[Посетить сайт](https://mutaliev2008.github.io/zakrivayuschiy-teg-f/)  
 
 ## Оглавление
 
