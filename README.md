@@ -1,5 +1,7 @@
-https://github.com/mutaliev2008/zakrivayuschiy-teg-f.git
 Проектная работа "Закрывающий тег"
+
+https://github.com/mutaliev2008/zakrivayuschiy-teg-f.git
+
 
 ## Оглавление
 
@@ -11,8 +13,8 @@ https://github.com/mutaliev2008/zakrivayuschiy-teg-f.git
 
 ![](https://github.com/MikeBeloborodov/zakrivayuschiy-teg-f/raw/main/screenshots/screenshot_mobile_dark.webp)
 ![](https://github.com/MikeBeloborodov/zakrivayuschiy-teg-f/raw/main/screenshots/screenshot_mobile_light.webp)
-![]([./screenshots/screenshot_desktop_dark.webp](https://github.com/MikeBeloborodov/zakrivayuschiy-teg-f/raw/main/screenshots/screenshot_desktop_dark.webp))
-![]([./screenshots/screenshot_desktop_light.webp](https://github.com/MikeBeloborodov/zakrivayuschiy-teg-f/raw/main/screenshots/screenshot_desktop_light.webp))
+![](https://github.com/MikeBeloborodov/zakrivayuschiy-teg-f/raw/main/screenshots/screenshot_desktop_dark.webp)
+![](https://github.com/MikeBeloborodov/zakrivayuschiy-teg-f/raw/main/screenshots/screenshot_desktop_light.webp)
 
 ### Описание
 
